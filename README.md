@@ -39,3 +39,14 @@ $ sudo dmesg | grep usb
 [ 2439.593054] usb 1-1: FTDI USB Serial Device converter now attached to ttyUSB0
 
 ```
+
+You can use the python can library to read from the can bus:
+```Python
+import can
+
+my_bus = can.Bus(channel="/dev/ttyUSB0", interface="serial")
+for msg in my_bus:
+    print(msg.data)
+```
+
+If you receive an error that you don't have permission to access `/dev/ttyUSB0`, then you will need to modify the permission with `sudo chmod 766 /dev/ttyUSB0` then logout or restart you computer to apply the changes.
