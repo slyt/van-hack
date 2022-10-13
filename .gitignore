@@ -1,3 +1,4 @@
 # Ignore python IDE and environment files
 venv/
 .idea/
+env/

@@ -2,3 +2,4 @@ PyQt5~=5.15.4
 obd~=0.7.1
 pyserial~=3.5
 python-can~=3.3.4
+connectedcar

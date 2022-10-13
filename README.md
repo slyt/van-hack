@@ -64,3 +64,14 @@ for msg in my_bus:
 
 If you receive an error that you don't have permission to access `/dev/ttyUSB0`, then you will need to modify the permission with `sudo chmod 766 /dev/ttyUSB0` then logout or restart you computer to apply the changes.
 
+## Development
+
+Create virutal environment:
+`python3 -m venv env`
+
+Activate python environment:
+- bash/zsh: `source env/bin/activate`
+- Windows: `env\Scripts\activate.bat`
+
+Install requirements:
+`requirtements.txt`
