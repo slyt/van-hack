@@ -1,6 +1,19 @@
 # van-hack
 
-An attempt to hack a 2020 Ford Transit to do the following:
+Attempting to free data from Ford Transit 2020.
+
+## Ford API's
+
+- https://developer.ford.com/apis
+- [connected-car-python-sdk](https://github.com/ianjwhite99/connected-car-python-sdk): Python library for FordPass API
+- [OpenXC](http://openxcplatform.com/): OpenXC™ is a combination of open source hardware and software that lets you extend your vehicle with custom applications and pluggable modules. It uses standard, well-known tools to open up a wealth of data from the vehicle to developers, even beyond OBD-II.
+
+## TODO
+
+It would be great to do the following:
+- Display WiFi hotspot signal strength
+- Prevent the WiFi hotspot from turning off after 30 minutes
+- Control the lights
 
 ### 1. Display WiFi hotspot signal strength
 
@@ -50,3 +63,4 @@ for msg in my_bus:
 ```
 
 If you receive an error that you don't have permission to access `/dev/ttyUSB0`, then you will need to modify the permission with `sudo chmod 766 /dev/ttyUSB0` then logout or restart you computer to apply the changes.
+
